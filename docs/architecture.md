@@ -50,18 +50,20 @@ Sprint 1 sonunda sistem veri akışı ve bileşen etkileşimi şu şekildedir:
 
 ---
 
-### Gelecek Sprintlerde Planlanan Mimari Yapı
+## Gelecek Sprintlerde Planlanan Mimari
 
-Sprint 1 sonunda sistemin temel analiz akışı başarıyla oluşturulmuş ve ilk çalışan prototip geliştirilmiştir. İlerleyen sprintlerde mevcut katmanlı mimari, gevşek bağlı (loosely coupled) tasarım ilkelerine uygun olarak aşağıdaki modüllerle genişletilecektir[cite: 1]:
+Sprint 1 sonunda sistemin temel analiz akışı başarıyla oluşturulmuş ve ilk çalışan prototip geliştirilmiştir.
 
-* **ATS Uyum Analiz Modülü:** CV metninin kurumsal tarama sistemlerine uyumluluğunu ölçen semantik kontrol katmanı[cite: 1].
-* **CV – İş İlanı Eşleşme ve Puanlama Modülü:** Aday ile pozisyon arasındaki uyumu matematiksel verilere ve skorlara döken analiz motoru[cite: 1].
-* **CV Geliştirme ve Optimizasyon Modülü:** Eksik alanları tespit ederek yapay zekâ destekli nokta atışı cümle önerileri sunan yapı[cite: 1].
-* **Ön Yazı (Cover Letter) Oluşturma Modülü:** Başvurulacak pozisyona özel, kişiselleştirilmiş ön yazılar üreten üretken yapay zekâ katmanı[cite: 1].
-* **Yapay Zekâ Destekli Mülakat Simülasyonu:** Rol bazlı mülakat senaryoları üreten ve adayın yanıtlarını analiz eden interaktif modül[cite: 1].
-* **Kariyer Yol Haritası ve Beceri Analizi:** Sektörel trendlere göre adayın profilini inceleyip kariyer patikası çizen veri bileşeni[cite: 1].
-* **Kişiselleştirilmiş Öğrenme Önerileri:** Tespit edilen eksik becerileri kapatmak için adaya özel eğitim ve kaynak tavsiye eden motor[cite: 1].
-* **Başvuru Takip Sistemi:** Kullanıcının tüm iş süreçlerini tek bir panelden yönetmesini sağlayan CRM benzeri yönetim katmanı[cite: 1].
-* **Web Tabanlı Kullanıcı Arayüzü:** Mevcut Python çekirdeğini (core) bir web API'sine bağlayarak son kullanıcıya ulaştıran arayüz entegrasyonu[cite: 1].
+İlerleyen sprintlerde mevcut mimariye aşağıdaki modüllerin eklenmesi planlanmaktadır:
 
-Bu modüller, mevcut mimari altyapı üzerine kademeli (incremental) olarak entegre edilecektir[cite: 1]. Böylece NorthCompass'un, yalnızca anlık bir CV analizi yapan dar kapsamlı bir araçtan; kullanıcıların iş arama ve kariyer gelişim süreçlerini uçtan uca destekleyen, yüksek pazar potansiyeline sahip bütünleşik bir **Yapay Zekâ Kariyer Platformuna** dönüştürülmesi hedeflenmektedir[cite: 1].
+- ATS Uyum Analiz Modülü
+- CV – İş İlanı Eşleşme ve Puanlama Modülü
+- CV Geliştirme ve Optimizasyon Modülü
+- Ön Yazı (Cover Letter) Oluşturma Modülü
+- Yapay Zekâ Destekli Mülakat Simülasyonu
+- Kariyer Yol Haritası ve Beceri Analizi
+- Kişiselleştirilmiş Öğrenme Önerileri
+- Başvuru Takip Sistemi
+- Web Tabanlı Kullanıcı Arayüzü
+
+Bu modüller mevcut mimari üzerine kademeli olarak eklenecektir. Böylece NorthCompass, yalnızca CV analizi yapan bir uygulama olmanın ötesine geçerek; kullanıcıların iş başvurusu, mülakat hazırlığı, beceri geliştirme ve kariyer planlama süreçlerini tek bir platform üzerinden yönetebilecekleri bütünleşik bir yapıya dönüşecektir.
