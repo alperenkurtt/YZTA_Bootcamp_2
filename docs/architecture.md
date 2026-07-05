@@ -47,3 +47,22 @@ Sprint 1 sonunda sistem veri akışı ve bileşen etkileşimi şu şekildedir:
                   │
                   ▼
          [Terminal / Çıktı] (Sonuç Raporlama)
+---
+
+## Gelecek Sprintlerde Planlanan Mimari
+
+Sprint 1 sonunda sistem temel analiz akışını başarıyla gerçekleştirebilmektedir.
+
+İlerleyen sprintlerde mevcut mimariye aşağıdaki modüllerin eklenmesi planlanmaktadır:
+
+- ATS Analiz Modülü
+- CV - İş İlanı Eşleşme Skoru
+- CV Geliştirme Modülü
+- Ön Yazı (Cover Letter) Oluşturma
+- Yapay Zekâ Destekli Mülakat Simülasyonu
+- Kariyer Yol Haritası
+- Öğrenme Önerileri
+- Başvuru Takip Sistemi
+- Web Arayüzü
+
+Bu modüller mevcut mimari üzerine eklenerek sistemin ölçeklenebilir ve sürdürülebilir şekilde geliştirilmesi hedeflenmektedir.
