@@ -2,7 +2,7 @@
 
 ## Genel Bakış
 
-NorthCompass, yapay zekâ destekli modüler ve ölçeklenebilir bir kariyer platformu olarak tasarlanmıştır. Sistem, kullanıcının sağladığı CV ile başvurmak istediği iş ilanını analiz ederek kişiselleştirilmiş geri bildirimler üretmektedir. 
+NorthCompass, yapay zekâ destekli modüler ve ölçeklenebilir bir kariyer platformu olarak tasarlanmıştır. Sistem, kullanıcının sağladığı CV ile başvurmak istediği iş ilanını analiz ederek kişiselleştirilmiş geri bildirimler üretmektedir.
 
 Sprint 1 kapsamında sistemin temel katmanlı mimarisi oluşturulmuş, modüler kod yapısı kurulmuş ve ilk çalışan prototip geliştirilmiştir.
 
@@ -13,40 +13,49 @@ Sprint 1 kapsamında sistemin temel katmanlı mimarisi oluşturulmuş, modüler 
 Proje, sürdürülebilirlik ve bakım kolaylığı açısından modüler bir katman yapısı (Modular Monolith) temel alınarak geliştirilmektedir.
 
 ### 1. Sunum ve Giriş Katmanı (Presentation & Input Layer)
-* **Bileşenler:** `main.py`
-* **Görevi:** Sistem akışını başlatır, girdi verilerini ilgili modüllere dağıtır ve çıkan analiz sonuçlarını son kullanıcıya veya terminal arayüzüne sunar.
+
+**Bileşenler:** `main.py`
+
+**Görevi:** Sistem akışını başlatır, girdi verilerini ilgili modüllere yönlendirir ve analiz sonuçlarını kullanıcıya sunar.
 
 ### 2. Veri ve Dosya İşleme Katmanı (Data & File Processing Layer)
-* **Bileşenler:** `utils/file_reader.py`
-* **Görevi:** `sample_data/` dizininden veya dış kaynaklardan gelen ham CV ve iş ilanı metinlerini okur. Verileri temizleyerek Yapay Zekâ katmanının işleyebileceği string formatına dönüştürür.
+
+**Bileşenler:** `utils/file_reader.py`
+
+**Görevi:** `sample_data/` klasöründeki CV ve iş ilanı metinlerini okuyarak analiz için uygun formata dönüştürür.
 
 ### 3. Yapay Zekâ ve Analiz Katmanı (AI & Analysis Layer)
-* **Bileşenler:** `utils/ai_analyzer.py`, Google Gemini API
-* **Görevi:** Sistem güvenliği için `.env` (python-dotenv) üzerinden beslenen API anahtarını kullanır. Temizlenen metinleri, optimize edilmiş prompt şablonları (Prompt Engineering) eşliğinde Google Gemini modeline iletir ve dönen semantik analiz sonuçlarını işler.
+
+**Bileşenler:** `utils/ai_analyzer.py`, Google Gemini API
+
+**Görevi:** `.env` dosyasında bulunan API anahtarını kullanarak Google Gemini modeli ile iletişim kurar. Hazırlanan istem (prompt) üzerinden CV ve iş ilanını analiz eder, sonuçları uygulamaya döndürür.
 
 ---
 
 ## Sprint 1 Mimari Akışı
 
-Sprint 1 sonunda sistem veri akışı ve bileşen etkileşimi şu şekildedir:
+Sprint 1 sonunda sistemin veri akışı aşağıdaki gibidir.
 
 ```text
-[Veri Kaynakları: sample_cv & sample_job]
-                  │
-                  ▼
-      [utils/file_reader.py] (Metin Okuma ve Çeviri)
-                  │
-                  ▼
-             [main.py] (Merkezi Yönetim ve Akış Kontrolü)
-                  │
-                  ▼
-      [utils/ai_analyzer.py] (Prompt Yönetimi & API Güvenliği)
-                  │
-                  ▼
-        [Google Gemini API] (Semantik Analiz Motoru)
-                  │
-                  ▼
-         [Terminal / Çıktı] (Sonuç Raporlama)
+          sample_cv.txt           sample_job.txt
+                 │                       │
+                 └──────────┬────────────┘
+                            │
+                            ▼
+                utils/file_reader.py
+                            │
+                            ▼
+                       main.py
+                            │
+                            ▼
+                 utils/ai_analyzer.py
+                            │
+                            ▼
+                  Google Gemini API
+                            │
+                            ▼
+                 Analiz Sonucu (Terminal)
+```
 
 ---
 
@@ -54,7 +63,7 @@ Sprint 1 sonunda sistem veri akışı ve bileşen etkileşimi şu şekildedir:
 
 Sprint 1 sonunda sistemin temel analiz akışı başarıyla oluşturulmuş ve ilk çalışan prototip geliştirilmiştir.
 
-İlerleyen sprintlerde mevcut mimariye aşağıdaki modüllerin eklenmesi planlanmaktadır:
+İlerleyen sprintlerde mevcut mimarinin aşağıdaki modüllerle genişletilmesi planlanmaktadır:
 
 - ATS Uyum Analiz Modülü
 - CV – İş İlanı Eşleşme ve Puanlama Modülü
@@ -66,4 +75,4 @@ Sprint 1 sonunda sistemin temel analiz akışı başarıyla oluşturulmuş ve il
 - Başvuru Takip Sistemi
 - Web Tabanlı Kullanıcı Arayüzü
 
-Bu modüller mevcut mimari üzerine kademeli olarak eklenecektir. Böylece NorthCompass, yalnızca CV analizi yapan bir uygulama olmanın ötesine geçerek; kullanıcıların iş başvurusu, mülakat hazırlığı, beceri geliştirme ve kariyer planlama süreçlerini tek bir platform üzerinden yönetebilecekleri bütünleşik bir yapıya dönüşecektir.
+Bu modüller mevcut mimari üzerine kademeli olarak entegre edilerek NorthCompass'un yalnızca CV analizi yapan bir uygulamadan, kullanıcıların iş başvurusu ve kariyer gelişim süreçlerini uçtan uca destekleyen bütünleşik bir yapay zekâ kariyer platformuna dönüştürülmesi hedeflenmektedir.
