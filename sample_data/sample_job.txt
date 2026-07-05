@@ -1,1 +1,19 @@
+Junior AI Engineer
+
+Requirements
+
+- Python
+- SQL
+- Machine Learning
+- Git
+- Docker
+- REST API
+- Communication Skills
+
+Responsibilities
+
+- Develop AI solutions
+- Work with machine learning models
+- Collaborate with software engineers
+- Improve existing AI systems
 
