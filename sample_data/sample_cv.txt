@@ -1,1 +1,20 @@
+Name: John Doe
+
+Education:
+- BSc Computer Engineering
+
+Technical Skills:
+- Python
+- SQL
+- Git
+- Machine Learning
+- Pandas
+- NumPy
+
+Projects:
+- Student Performance Prediction
+- AI Chatbot using Gemini API
+
+Languages:
+- English (B2)
 
