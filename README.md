@@ -1,6 +1,8 @@
 # NorthCompass
 
-İş başvurularını daha etkili, kişiselleştirilmiş ve başarılı hale getirmek amacıyla geliştirilen yapay zekâ destekli kariyer platformu.
+Yapay zekâ destekli kariyer platformu.
+
+NorthCompass, kullanıcıların iş başvurularını daha etkili, kişiselleştirilmiş ve başarılı hale getirmelerine yardımcı olmak amacıyla geliştirilen yapay zekâ destekli bir kariyer platformudur.
 
 ---
 
@@ -19,25 +21,30 @@
 
 # Ürün Bilgileri
 
-**Ürün Adı:** NorthCompass
+## Ürün Adı
+
+**NorthCompass**
 
 ## Ürün Açıklaması
 
-NorthCompass, kullanıcıların başvurmayı hedefledikleri iş ilanına göre CV'lerini analiz eden, iş ilanı ile CV arasındaki uyumu değerlendiren ve kişiselleştirilmiş öneriler sunan yapay zekâ destekli bir kariyer platformudur.
+NorthCompass, kullanıcıların başvurmayı planladıkları iş ilanına göre CV'lerini analiz eden, iş ilanı ile CV arasındaki uyumu değerlendiren ve yapay zekâ destekli kişiselleştirilmiş öneriler sunan bir kariyer platformudur.
+
+Platform, kullanıcıların yalnızca CV'lerini değerlendirmekle kalmaz; eksik yetkinlikleri belirlemeyi, ATS (Applicant Tracking System) uyumluluğunu artırmayı ve başvuru sürecini daha verimli hale getirmeyi amaçlar.
 
 ## Hedef Kitle
 
 - Üniversite öğrencileri
 - Yeni mezunlar
 - Staj arayan adaylar
-- İş değiştirmek isteyen profesyoneller
+- İlk işini arayan kullanıcılar
+- Kariyer değişikliği yapmak isteyen profesyoneller
 
 ## Temel Özellikler
 
 - CV Analizi
 - İş İlanı Analizi
-- ATS Uyum Analizi
 - CV – İş İlanı Eşleşme Analizi
+- ATS Uyum Analizi
 - Eksik Beceri Analizi
 - CV Geliştirme Önerileri
 
@@ -45,27 +52,29 @@ NorthCompass, kullanıcıların başvurmayı hedefledikleri iş ilanına göre C
 
 # Proje Hakkında
 
-Günümüzde birçok aday farklı şirketlere aynı CV ile başvuru yapmaktadır. Ancak her şirket ve her pozisyon farklı teknik beceriler, deneyimler ve anahtar kelimeler beklemektedir. Özellikle ATS (Aday Takip Sistemleri), CV'leri işe alım uzmanlarına ulaşmadan önce belirli kriterlere göre değerlendirmektedir. Bu nedenle adaylar yeterli bilgi ve deneyime sahip olsalar bile, CV'leri iş ilanıyla yeterince uyumlu olmadığı için değerlendirme sürecinin dışında kalabilmektedir.
+Günümüzde birçok aday farklı şirketlere aynı CV ile başvuru yapmaktadır. Ancak her şirket ve her pozisyon farklı teknik beceriler, deneyimler ve anahtar kelimeler beklemektedir. Özellikle ATS sistemleri, CV'leri işe alım uzmanlarına ulaşmadan önce belirli kriterlere göre değerlendirmektedir.
 
-NorthCompass bu problemi yapay zekâ desteğiyle çözmeyi hedeflemektedir. Sistem, kullanıcının CV'sini ve başvuracağı iş ilanını birlikte analiz ederek güçlü yönleri, geliştirilmesi gereken alanları ve başvuru başarısını artırabilecek önerileri kullanıcıya sunar.
+Bu nedenle adaylar yeterli bilgi ve deneyime sahip olsalar bile, CV'leri iş ilanıyla yeterince uyumlu olmadığı için değerlendirme sürecinin ilk aşamasında elenebilmektedir.
 
-Uzun vadeli hedefimiz yalnızca CV analizi yapan bir araç geliştirmek değil; iş arama sürecinin tamamına rehberlik eden, kullanıcıların kariyer gelişimini destekleyen kapsamlı bir yapay zekâ platformu oluşturmaktır.
+NorthCompass bu problemi yapay zekâ desteğiyle çözmeyi hedeflemektedir. Sistem, kullanıcının CV'sini ve başvuracağı iş ilanını birlikte analiz ederek güçlü yönleri, geliştirilmesi gereken alanları ve başvuru başarısını artırabilecek önerileri kullanıcıya sunmaktadır.
+
+Uzun vadeli hedefimiz yalnızca CV analizi yapan bir uygulama geliştirmek değil; iş arama sürecinin tamamına rehberlik eden, kullanıcıların kariyer gelişimini destekleyen kapsamlı bir yapay zekâ kariyer platformu oluşturmaktır.
 
 ---
 
 # Problem
 
-İş arama sürecinde adayların karşılaştığı en önemli problemlerden biri, her başvuru için CV'lerini ilgili pozisyona göre yeniden düzenlemek zorunda olmalarıdır.
+İş arama sürecinde adayların karşılaştığı en büyük problemlerden biri, her başvuru için CV'lerini ilgili pozisyona göre yeniden düzenlemek zorunda olmalarıdır.
 
-Her iş ilanı farklı beceriler, deneyimler ve anahtar kelimeler içermektedir. Buna rağmen birçok aday aynı CV ile farklı pozisyonlara başvurmaktadır. Bu durum ATS sistemlerinde düşük eşleşme oranına neden olmakta ve adayların daha ilk aşamada elenmesine yol açabilmektedir.
+Her iş ilanı farklı beceriler, deneyimler ve anahtar kelimeler içermektedir. Buna rağmen birçok aday aynı CV ile onlarca farklı ilana başvurmaktadır. Sonuç olarak ATS sistemlerinde düşük eşleşme oranı oluşmakta ve adaylar daha insan kaynakları uzmanına ulaşmadan elenebilmektedir.
 
-Adayların hangi becerilerinin eksik olduğu, CV'lerinde hangi deneyimlerini daha iyi vurgulamaları gerektiği veya başvuru başarılarını artırmak için neleri geliştirmeleri gerektiği konusunda da yeterli geri bildirim sunan kapsamlı bir çözüm bulunmamaktadır.
+Bunun yanında adayların hangi becerilerinin eksik olduğu, hangi deneyimlerini daha iyi ifade edebilecekleri veya CV'lerini nasıl geliştirebilecekleri konusunda kişiselleştirilmiş geri bildirim sunan kapsamlı bir çözüm bulunmamaktadır.
 
 ---
 
 # Çözüm
 
-NorthCompass, kullanıcıların başvuru süreçlerini daha bilinçli ve verimli yönetebilmeleri için yapay zekâ destekli analizler sunmayı amaçlamaktadır.
+NorthCompass, kullanıcıların başvuru süreçlerini daha bilinçli yönetebilmeleri için yapay zekâ destekli analizler sunmaktadır.
 
 Platform;
 
@@ -82,9 +91,11 @@ Platform;
 
 NorthCompass modüler bir yapıda geliştirilmektedir.
 
-İlk aşamada temel CV analizi ve iş ilanı eşleştirmesi üzerine odaklanılmaktadır. İlerleyen sprintlerde platformun aşağıdaki modüllerle genişletilmesi planlanmaktadır.
+Sprint 1 kapsamında ürünün temel mimarisi ve ilk çalışan prototipi oluşturulmuştur.
 
-## Mevcut Modüller (Sprint 1)
+İlerleyen sprintlerde platform aşağıdaki modüllerle geliştirilecektir.
+
+## Sprint 1 Modülleri
 
 - CV Analizi
 - İş İlanı Analizi
@@ -104,31 +115,31 @@ NorthCompass modüler bir yapıda geliştirilmektedir.
 - Maaş Analizi
 - Başvuru Takip Sistemi
 
-Bu yapı sayesinde NorthCompass'un yalnızca CV analizi yapan bir uygulama değil, kullanıcıların kariyer yolculuğunu destekleyen bütünleşik bir platforma dönüşmesi hedeflenmektedir.
+Uzun vadede NorthCompass'un yalnızca CV analizi yapan bir araç değil, kullanıcıların kariyer gelişimini destekleyen bütünleşik bir yapay zekâ platformuna dönüşmesi hedeflenmektedir.
 
 ---
 
 # Sprint 1
 
-Sprint 1 kapsamında projenin temel altyapısı oluşturulmuş ve ilk çalışabilir prototip geliştirilmiştir.
+Sprint 1 kapsamında projenin teknik altyapısı oluşturulmuş ve ilk çalışan prototip geliştirilmiştir.
 
-Bu sprintte tamamlanan çalışmalar:
+Bu sprintte tamamlanan çalışmalar;
 
 - GitHub proje yapısının oluşturulması
 - Python proje altyapısının hazırlanması
-- Google Gemini API entegrasyonu
+- Google Gemini API entegrasyonunun gerçekleştirilmesi
 - Örnek CV ve iş ilanı verilerinin hazırlanması
-- İlk analiz akışının geliştirilmesi
+- İlk yapay zekâ analiz akışının geliştirilmesi
 - Proje dokümantasyonunun hazırlanması
 
 Sprint 1 sonunda geliştirilen prototip;
 
-- Örnek bir CV dosyasını okuyabilmektedir.
-- Örnek bir iş ilanını okuyabilmektedir.
+- Örnek CV dosyasını okuyabilmektedir.
+- Örnek iş ilanını okuyabilmektedir.
 - Her iki metni Google Gemini API ile analiz edebilmektedir.
 - CV ile iş ilanı arasındaki uyuma ilişkin yapay zekâ destekli geri bildirim oluşturabilmektedir.
 
-**Not:** Sprint 1 kapsamında kullanıcıdan dosya yükleme özelliği yerine örnek CV ve iş ilanı dosyaları kullanılarak ilk çalışan prototip geliştirilmiştir. Gerçek kullanıcı yükleme desteği ilerleyen sprintlerde eklenecektir.
+> **Not:** Sprint 1 kapsamında kullanıcıdan dosya yükleme özelliği yerine örnek CV ve iş ilanı dosyaları kullanılarak ilk çalışan prototip geliştirilmiştir. Gerçek kullanıcıdan dosya yükleme ve gelişmiş analiz modülleri ilerleyen sprintlerde eklenecektir.
 
 ---
 
@@ -173,14 +184,14 @@ NorthCompass/
 
 # Kurulum
 
-Projeyi bilgisayarınıza indirin.
+Projeyi bilgisayarınıza klonlayın.
 
 ```bash
-git clone https://github.com/ezgigulkaraca/NorthCompass.git
+git clone <repository-url>
 cd NorthCompass
 ```
 
-Gerekli kütüphaneleri yükleyin.
+Gerekli bağımlılıkları yükleyin.
 
 ```bash
 pip install -r requirements.txt
@@ -202,13 +213,11 @@ python main.py
 
 # Gelecek Hedefi
 
-NorthCompass'un amacı yalnızca adayların CV'lerini analiz eden bir uygulama geliştirmek değildir.
-
-Uzun vadede kullanıcıların iş arama sürecini tek bir platform üzerinden yönetebilecekleri yapay zekâ destekli kapsamlı bir kariyer platformu oluşturulması hedeflenmektedir.
+NorthCompass'un uzun vadeli amacı yalnızca adayların CV'lerini analiz eden bir uygulama geliştirmek değildir.
 
 Platformun ilerleyen sürümlerinde kullanıcılar;
 
-- Başvurularına özel CV önerileri alabilecek,
+- Başvuracakları pozisyona özel CV önerileri alabilecek,
 - Ön yazı oluşturabilecek,
 - Yapay zekâ destekli mülakat simülasyonu yapabilecek,
 - Eksik becerilerini analiz edebilecek,
@@ -220,6 +229,6 @@ Platformun ilerleyen sürümlerinde kullanıcılar;
 
 # Ekip
 
-Bu proje, YZTA Bootcamp kapsamında Scrum metodolojisi kullanılarak geliştirilmektedir.
+Bu proje, **YZTA Bootcamp** kapsamında **Takım-2** tarafından Scrum metodolojisi kullanılarak geliştirilmektedir.
 
-Sprint 1 sürecinde projenin temel altyapısı oluşturulmuş ve ilk çalışabilir prototip geliştirilmiştir. Proje, sonraki sprintlerde yeni özellikler eklenerek geliştirilmeye devam edecektir.
+Sprint 1 sürecinde ürünün temel mimarisi oluşturulmuş ve ilk çalışan prototip geliştirilmiştir. Proje, sonraki sprintlerde yeni modüller ve özellikler eklenerek geliştirilmeye devam edecektir.
