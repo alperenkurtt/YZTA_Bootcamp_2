@@ -49,8 +49,6 @@ Sprint 1 sonunda sistem veri akışı ve bileşen etkileşimi şu şekildedir:
          [Terminal / Çıktı] (Sonuç Raporlama)
 ---
 
----
-
 ## Gelecek Sprintlerde Planlanan Mimari Yapı
 
 Sprint 1 sonunda sistemin temel analiz akışı başarıyla oluşturulmuş ve ilk çalışan prototip geliştirilmiştir. İlerleyen sprintlerde mevcut katmanlı mimari, gevşek bağlı (loosely coupled) tasarım ilkelerine uygun olarak aşağıdaki modüllerle genişletilecektir[cite: 1]:
