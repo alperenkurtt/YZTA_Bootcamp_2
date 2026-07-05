@@ -1,116 +1,151 @@
-# Project Roadmap
+# Proje Yol Haritası (Project Roadmap)
 
-## Genel Hedef
+## Genel Vizyon
 
-NorthCompass'un amacı, kullanıcıların iş başvuru süreçlerini yapay zekâ desteğiyle daha verimli hale getiren kapsamlı bir kariyer platformu geliştirmektir.
+NorthCompass, kullanıcıların iş başvuru süreçlerini yapay zekâ desteğiyle daha verimli, kişiselleştirilmiş ve başarılı hale getirmeyi amaçlayan kapsamlı bir kariyer platformudur.
 
-Proje, Agile yaklaşımı benimsenerek 6 sprint boyunca adım adım geliştirilecektir.
+Proje, Agile (Çevik Yazılım Geliştirme) yaklaşımı benimsenerek altı sprint boyunca aşamalı olarak geliştirilecektir. Her sprint sonunda çalışan bir ürün çıktısı elde edilmesi ve sistemin kademeli olarak genişletilmesi hedeflenmektedir.
 
 ---
 
-# Sprint 1 - Temel Altyapı
+# Sprint 1 – Temel Altyapı ve İlk Prototip
 
-Hedef:
+## Hedef
 
-Projenin temel altyapısını oluşturmak ve ilk çalışan prototipi geliştirmek.
+Projenin teknik altyapısını oluşturmak ve ilk çalışan yapay zekâ destekli prototipi geliştirmek.
 
-Tamamlanan çalışmalar:
+## Gerçekleştirilen Çalışmalar
 
 - GitHub depo yapısının oluşturulması
-- Python proje altyapısının hazırlanması
-- Google Gemini API entegrasyonu
+- Modüler proje klasör yapısının hazırlanması
+- Python geliştirme ortamının oluşturulması
+- Google Gemini API entegrasyonunun gerçekleştirilmesi
 - Örnek CV ve iş ilanı verilerinin hazırlanması
-- İlk AI analiz akışının geliştirilmesi
-- Temel proje dokümantasyonunun hazırlanması
+- İlk yapay zekâ analiz akışının geliştirilmesi
+- Proje dokümantasyonunun hazırlanması
+
+## Sprint Çıktısı
+
+Sprint 1 sonunda geliştirilen prototip;
+
+- Örnek CV ve iş ilanı verilerini okuyabilmektedir.
+- Google Gemini API üzerinden analiz gerçekleştirebilmektedir.
+- CV ile iş ilanı arasındaki uyuma yönelik yapay zekâ destekli geri bildirim üretebilmektedir.
 
 ---
 
-# Sprint 2 - Analiz Motorunun Geliştirilmesi
+# Sprint 2 – Analiz Motorunun Geliştirilmesi
 
-Hedef:
+## Hedef
 
-CV ile iş ilanı arasındaki karşılaştırma mekanizmasını güçlendirmek.
+CV ile iş ilanı arasındaki karşılaştırma mekanizmasını daha kapsamlı ve ölçülebilir hale getirmek.
 
-Planlanan çalışmalar:
+## Planlanan Çalışmalar
 
 - ATS uyumluluk analizi
 - CV – İş İlanı eşleşme skoru
 - Eksik beceri analizi
+- Anahtar kelime analizi
 - CV geliştirme önerileri
-- Prompt iyileştirmeleri
+- Prompt optimizasyonları
+
+## Sprint Çıktısı
+
+Detaylı analiz raporu üreten ve başvuru başarısını artırmaya yönelik öneriler sunan gelişmiş analiz motoru.
 
 ---
 
-# Sprint 3 - Başvuru Destek Modülleri
+# Sprint 3 – Başvuru Destek Modülleri
 
-Hedef:
+## Hedef
 
-Başvuru sürecini kolaylaştıracak yeni modüllerin geliştirilmesi.
+Kullanıcının başvuru sürecini kolaylaştıracak yapay zekâ destekli üretken özellikleri geliştirmek.
 
-Planlanan çalışmalar:
+## Planlanan Çalışmalar
 
 - Ön Yazı (Cover Letter) oluşturma
-- Optimize edilmiş CV önerisi
-- Sonuçların daha anlaşılır sunulması
+- İş ilanına özel optimize edilmiş CV önerisi
+- Analiz sonuçlarının daha anlaşılır şekilde sunulması
+- Yapılandırılmış çıktı formatlarının oluşturulması
+
+## Sprint Çıktısı
+
+Başvuru sürecini destekleyen üretken yapay zekâ modüllerinin sisteme eklenmesi.
 
 ---
 
-# Sprint 4 - Yapay Zekâ Destekli Mülakat
+# Sprint 4 – Yapay Zekâ Destekli Mülakat Sistemi
 
-Hedef:
+## Hedef
 
-Mülakat hazırlık modülünün geliştirilmesi.
+Kullanıcıların mülakat sürecine hazırlanmasını sağlayacak etkileşimli bir modül geliştirmek.
 
-Planlanan çalışmalar:
+## Planlanan Çalışmalar
 
-- Pozisyona özel mülakat soruları
-- Cevap analizi
-- Yapay zekâ geri bildirimi
+- Pozisyona özel mülakat sorularının oluşturulması
+- Kullanıcı cevaplarının analiz edilmesi
+- Yapay zekâ destekli geri bildirim mekanizması
+- Mülakat performans değerlendirmesi
+
+## Sprint Çıktısı
+
+Kullanıcının mülakat pratiği yapmasını sağlayan ilk çalışan simülasyon modülü.
 
 ---
 
-# Sprint 5 - Kariyer Gelişim Modülleri
+# Sprint 5 – Kariyer Gelişim Modülleri
 
-Hedef:
+## Hedef
 
-Kullanıcının uzun vadeli kariyer gelişimini desteklemek.
+Kullanıcının uzun vadeli kariyer gelişimini destekleyen akıllı öneri sistemlerini geliştirmek.
 
-Planlanan çalışmalar:
+## Planlanan Çalışmalar
 
-- Kariyer yol haritası
+- Kariyer yol haritası oluşturma
+- Eksik beceri analizi
 - Öğrenme önerileri
-- Eksik beceri geliştirme önerileri
-- Maaş analizi
+- Sektörel maaş analizi
+
+## Sprint Çıktısı
+
+Kullanıcının kariyer gelişimini destekleyen kişiselleştirilmiş öneri sistemi.
 
 ---
 
-# Sprint 6 - Kullanıcı Deneyimi ve Son Ürün
+# Sprint 6 – Web Platformu ve MVP
 
-Hedef:
+## Hedef
 
-Platformun kullanıcı deneyimini geliştirerek MVP'nin tamamlanması.
+Tüm modülleri tek bir platform altında birleştirerek çalışabilir Minimum Viable Product (MVP) sürümünü tamamlamak.
 
-Planlanan çalışmalar:
+## Planlanan Çalışmalar
 
 - Web arayüzünün geliştirilmesi
 - Başvuru takip sistemi
-- Performans iyileştirmeleri
+- Kullanıcı deneyimi iyileştirmeleri
+- Performans optimizasyonları
 - Hata düzeltmeleri
-- Final sunumu için son düzenlemeler
+- Final sunumu için sistemin hazırlanması
+
+## Sprint Çıktısı
+
+Yapay zekâ destekli, uçtan uca çalışan web tabanlı NorthCompass MVP'si.
 
 ---
 
-# Uzun Vadeli Vizyon
+# Uzun Vadeli Ürün Vizyonu
 
-Bootcamp sonrasında NorthCompass'un geliştirilmeye devam edilmesi hedeflenmektedir.
+Bootcamp sürecinin tamamlanmasının ardından NorthCompass'un geliştirilmeye devam edilmesi hedeflenmektedir.
 
-Planlanan uzun vadeli çalışmalar:
+Planlanan geliştirmeler:
 
-- Gerçek CV dosyalarının (PDF/DOCX) desteklenmesi
-- Gerçek iş ilanlarının URL üzerinden analiz edilmesi
-- Kullanıcı hesabı sistemi
-- Bulut tabanlı veri saklama
-- Mobil uygulama
-- Çoklu yapay zekâ modeli desteği
-- Kariyer danışmanı paneli
+- PDF ve DOCX formatındaki CV dosyalarının doğrudan yüklenebilmesi
+- İş ilanlarının bağlantı (URL) üzerinden analiz edilebilmesi
+- Kullanıcı hesap ve profil yönetimi
+- Bulut tabanlı veri saklama altyapısı
+- Mobil uygulama desteği
+- Farklı yapay zekâ modelleriyle çalışma desteği
+- Kariyer danışmanları için yönetim paneli
+- Gelişmiş analiz ve raporlama ekranları
 
+NorthCompass'un uzun vadeli hedefi; yalnızca CV analizi yapan bir araç olmak değil, kullanıcıların iş başvurusu, mülakat hazırlığı ve kariyer gelişim süreçlerini tek platform üzerinden yönetebilecekleri kapsamlı bir yapay zekâ kariyer platformu haline gelmektir.
