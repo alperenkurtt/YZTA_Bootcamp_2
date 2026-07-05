@@ -2,105 +2,104 @@
 
 ## Sprint Bilgileri
 
-**Sprint:** Sprint 1
-
-**Proje:** NorthCompass
-
-**Sprint Amacı:**
-Projenin temel altyapısını oluşturmak, yapay zekâ entegrasyonunu gerçekleştirmek ve CV ile iş ilanını analiz edebilen ilk çalışabilir prototipi geliştirmek.
+* **Sprint:** Sprint 1
+* **Proje:** NorthCompass
+* **Sprint Amacı:** Projenin temel altyapısını oluşturmak, yapay zekâ entegrasyonunu gerçekleştirmek ve CV ile iş ilanını analiz edebilen ilk çalışabilir prototipi geliştirmek.
 
 ---
 
 ## Sprint Hedefleri
 
-Sprint 1 kapsamında aşağıdaki hedefler belirlenmiştir.
-- GitHub proje yapısının oluşturulması
-- Python proje altyapısının hazırlanması
-- Google Gemini API entegrasyonunun gerçekleştirilmesi
-- Örnek CV ve iş ilanı verilerinin hazırlanması
-- İlk analiz akışının geliştirilmesi
-- Proje dokümantasyonunun hazırlanması
+Sprint 1 kapsamında aşağıdaki hedefler belirlenmiştir ve tamamı başarıyla yerine getirilmiştir:
+
+* GitHub proje organizasyon yapısının oluşturulması.
+* Python modüler backend altyapısının hazırlanması.
+* Google Gemini API entegrasyonunun güvenli şekilde gerçekleştirilmesi.
+* Test süreçleri için örnek CV ve iş ilanı verilerinin yapılandırılması.
+* Semantik analiz gerçekleştiren ilk yapay zekâ akışının geliştirilmesi.
+* Proje yönetim ve teknik dökümantasyonunun hazırlanması.
 
 ---
 
 ## Sprint Board (Proje Takibi)
 
-Sprint 1 sürecinde görevlerin planlanması, dağıtımı ve takibi GitHub Project Board üzerinden Kanban ilkelerine uygun olarak gerçekleştirilmiştir. Tüm hedefler başarıyla tamamlanmıştır.
+Sprint 1 sürecinde görevlerin planlanması, dağıtımı ve takibi GitHub Project Board üzerinde Kanban ilkelerine uygun olarak gerçekleştirilmiştir. İş listesindeki tüm görevler "Done" sütununa taşınarak süreç tamamlanmıştır.
 
-![Sprint Board](Sprint 1 Board.png)
+![Sprint Board](Sprint_1_Board.png)
 
 ---
 
 ## Daily Scrum Notları
 
 ### Gün 1
-- Proje fikri belirlendi ve ürün vizyonu oluşturuldu.
-- GitHub deposu (repository) ve temel klasör yapısı kuruldu.
+* Proje fikri netleştirildi ve ürün vizyonu oluşturuldu.
+* GitHub merkezi deposu (repository) ve temel klasör yapısı kuruldu.
 
 ### Gün 2
-- README ve temel bağımlılıkları içeren requirements.txt dosyaları hazırlandı.
-- Kullanılacak mimari altyapı tartışıldı ve belgelendi.
+* Projenin giriş noktası olan README ve bağımlılık yönetimini sağlayan requirements.txt dosyaları hazırlandı.
+* Geliştirilecek modüler mimari katmanları tartışıldı ve belgelendi.
 
 ### Gün 3
-- Google Gemini API entegrasyonu tamamlandı ve `ai_analyzer.py` modülü yazıldı.
-- Test süreçlerinde kullanılmak üzere örnek CV ve iş ilanı metinleri oluşturuldu.
+* Google Gemini API entegrasyonu tamamlanarak utils/ai_analyzer.py modülü kodlandı.
+* Test süreçlerinde girdi olarak kullanılmak üzere ham metin tabanlı örnek CV ve iş ilanı içerikleri üretildi.
 
 ### Gün 4
-- Proje mimarisi modüler hale getirilerek `utils/` altına taşındı.
-- Product Backlog, Roadmap, User Stories ve Architecture dokümanları hazırlanarak sprint teslimine hazır hale getirildi.
+* Proje mimarisi gevşek bağlı (loosely coupled) modüller haline getirilerek utils/ dizini altına taşındı ve main.py akışı doğrulandı.
+* Product Backlog, Roadmap, User Stories ve Architecture dokümanları nihai hallerine getirilerek sprint teslim paketi hazırlandı.
 
 ---
 
 ## Tamamlanan Çalışmalar
 
-Sprint boyunca aşağıdaki çalışmalar tamamlanmıştır.
+Sprint boyunca planlanan ve hayata geçirilen çalışmaların detaylı listesi şu şekildedir:
 
 | Çalışma | Durum |
-|---------|--------|
+| :--- | :--- |
 | GitHub deposunun oluşturulması | Tamamlandı |
 | Proje klasör yapısının hazırlanması | Tamamlandı |
 | Python geliştirme ortamının hazırlanması | Tamamlandı |
 | Google Gemini API entegrasyonu | Tamamlandı |
-| Örnek CV verisinin hazırlanması | Tamamlandı |
+| Örnek CV verisinin hazırlanmesi | Tamamlandı |
 | Örnek iş ilanı verisinin hazırlanması | Tamamlandı |
 | İlk AI analiz akışının geliştirilmesi | Tamamlandı |
-| README hazırlanması | Tamamlandı |
-| Product Backlog hazırlanması | Tamamlandı |
-| User Stories hazırlanması | Tamamlandı |
-| System Architecture hazırlanması | Tamamlandı |
-| Roadmap hazırlanması | Tamamlandı |
+| README dökümanının hazırlanması | Tamamlandı |
+| Product Backlog dökümanının hazırlanması | Tamamlandı |
+| User Stories dökümanının hazırlanması | Tamamlandı |
+| System Architecture dökümanının hazırlanması | Tamamlandı |
+| Roadmap dökümanının hazırlanması | Tamamlandı |
 
 ---
 
 ## Sprint Çıktısı (MVP)
 
-Sprint 1 sonunda geliştirilen prototip aşağıdaki işlemleri gerçekleştirebilmektedir:
-- Örnek bir CV dosyasını okuyabilmektedir.
-- Örnek bir iş ilanı dosyasını okuyabilmektedir.
-- Her iki metni Google Gemini API kullanarak analiz edebilmektedir.
-- CV ile iş ilanı arasındaki uyuma ilişkin yapay zekâ destekli geri bildirim oluşturabilmektedir.
+Sprint 1 sonunda başarıyla ayağa kaldırılan ve terminal çıktısı alınan ilk prototip (Minimum Viable Product) aşağıdaki işlevleri gerçekleştirmektedir:
+
+* Belirlenen dizindeki örnek CV dosyasını yapısal olarak okuyabilmektedir.
+* Belirlenen dizindeki örnek iş ilanı metnini veri katmanına alabilmektedir.
+* Güvenli API anahtarı yönetimiyle her iki metni semantik olarak Google Gemini modeline beslemektedir.
+* Adayın profili ile pozisyon gereksinimleri arasındaki uyuma dair güçlü/zayıf yönleri içeren yapay zekâ analiz raporu üretebilmektedir.
 
 ---
 
 ## Sprint Review (Değerlendirme)
 
-Sprint 1 hedefleri eksiksiz şekilde tamamlanmıştır. 
-- Projenin temel sürdürülebilir mimarisi oluşturuldu.
-- İlk çalışan MVP (Minimum Viable Product) başarıyla geliştirildi.
-- Google Gemini API entegrasyonu ile yapay zekâ yetenekleri sisteme dahil edildi.
-- Sonraki sprintler için ürün yol haritası (Roadmap) netleştirildi.
+Sprint 1 planlamasına ve zaman çizelgesine tam uyum sağlanmıştır:
+
+* Projenin sürdürülebilir, genişletilebilir ve modüler mimari altyapısı kurulmuştur.
+* İlk fonksiyonel MVP başarıyla doğrulanmış ve terminal çıktısı kanıt olarak sunulmuştur.
+* Google Gemini API entegrasyonu ile yapay zekâ yetenekleri sisteme kararlı bir şekilde dahil edilmiştir.
+* Gelecek sprintlerde geliştirilecek modüller için ürün yol haritası (Roadmap) netleştirilmiştir.
 
 ---
 
 ## Sprint Retrospective
 
 ### İyi Gidenler
-- Projenin temel mimarisi ve klasör yapısı çok temiz ve modüler kuruldu.
-- Yapay zekâ entegrasyonu hedeflenen süreden daha hızlı tamamlandı.
-- Dokümantasyon süreçleri (Architecture, Backlog vb.) plana sadık kalınarak eksiksiz yürütüldü.
+* Projenin temel mimarisi ve klasör yapısı oldukça temiz, modüler ve anlaşılır bir şekilde kurgulandı.
+* Yapay zekâ entegrasyonu ve prompt şablonlarının optimizasyonu hedeflenen süreden daha kısa sürede tamamlandı.
+* Dokümantasyon süreçleri çevik proje yönetimi standartlarına bağlı kalınarak eksiksiz yürütüldü.
 
-### Geliştirilecek Noktalar / Sonraki Sprint Hedefleri
-- İkinci sprintte komut satırı yerine daha kullanışlı bir kullanıcı arayüzü (UI) geliştirilecek.
-- ATS uyumluluk analizi, CV - İş İlanı eşleşme skoru ve eksik beceri analizi gibi daha gelişmiş analiz algoritmaları eklenecek.
-- Kullanıcıların kendi CV'lerini doğrudan sisteme yükleyebileceği dinamik dosya yükleme desteği sağlanacak.
-
+### Geliştirilecek Noktalar ve Sonraki Sprint Hedefleri
+* İlerleyen süreçlerde komut satırı arayüzü yerine kullanıcı deneyimini artıracak web tabanlı bir arayüz entegrasyonu planlanacaktır.
+* ATS uyumluluk analizi, matematiksel eşleşme skoru ve eksik becerilerin tespiti gibi daha derinlemesine analiz algoritmaları mimariye dahil edilecektir.
+* Kullanıcıların statik metinler yerine kendi dinamik CV dosyalarını doğrudan sisteme yükleyebileceği esnek dosya işleme altyapısı kurulacaktır.
