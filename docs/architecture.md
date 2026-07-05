@@ -49,6 +49,7 @@ Sprint 1 sonunda sistem veri akışı ve bileşen etkileşimi şu şekildedir:
          [Terminal / Çıktı] (Sonuç Raporlama)
 ---
 
+
 ## Gelecek Sprintlerde Planlanan Mimari
 
 Sprint 1 sonunda sistem temel analiz akışını başarıyla gerçekleştirebilmektedir.
