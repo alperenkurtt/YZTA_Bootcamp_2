@@ -9,10 +9,14 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 
-def analyze_cv(cv_text, job_text):
+def analyze_cv(cv_text, job_text, match_result):
     """
-    CV ile iş ilanını Gemini kullanarak analiz eder.
+    CV ile iş ilanını, önceden hesaplanmış anahtar kelime eşleşmesini temel alarak
+    Gemini kullanarak analiz eder.
     """
+
+    matched = ", ".join(match_result["matched"]) or "yok"
+    missing = ", ".join(match_result["missing"]) or "yok"
 
     prompt = f"""
     Sen profesyonel bir kariyer danışmanısın.
@@ -25,13 +29,15 @@ def analyze_cv(cv_text, job_text):
     İş İlanı:
     {job_text}
 
-    Lütfen aşağıdaki başlıklarda analiz yap:
+    CV - İş İlanı eşleşme skoru koddan hesaplanmıştır: %{match_result["score"]}
+    Eşleşen beceriler: {matched}
+    Eksik beceriler: {missing}
 
-    1. CV - İş İlanı Uyum Oranı (%)
-    2. Güçlü Yönler
-    3. Eksik Yetkinlikler
-    4. ATS Uyumluluğu
-    5. CV Geliştirme Önerileri
+    Bu verileri temel alarak aşağıdaki başlıklarda analiz yap:
+
+    1. Güçlü Yönler
+    2. ATS Uyumluluğu (skoru tekrar hesaplama, sadece değerlendirme yaz)
+    3. Eksik becerilere dayalı CV Geliştirme Önerileri
 
     Yanıtını Türkçe ver.
     """

@@ -9,10 +9,10 @@ Bu doküman, NorthCompass projesi kapsamında geliştirilmesi planlanan temel ö
 | PB-03 | CV okuma modülü | CV dosyasının sisteme okunması | Yüksek | Sprint 1 | Tamamlandı |
 | PB-04 | İş ilanı okuma modülü | İş ilanı dosyasının sisteme okunması | Yüksek | Sprint 1 | Tamamlandı |
 | PB-05 | İlk AI analiz akışı | CV ve iş ilanının birlikte analiz edilmesi | Yüksek | Sprint 1 | Tamamlandı |
-| PB-06 | ATS uyumluluk analizi | CV'nin ATS açısından değerlendirilmesi | Yüksek | Sprint 2 | Planlandı |
-| PB-07 | CV - İş İlanı eşleşme skoru | CV ile iş ilanı arasındaki uyumun puanlanması | Yüksek | Sprint 2 | Planlandı |
-| PB-08 | Eksik beceri analizi | Eksik teknik ve kişisel becerilerin belirlenmesi | Yüksek | Sprint 2 | Planlandı |
-| PB-09 | CV geliştirme önerileri | CV'nin güçlendirilmesi için öneriler sunulması | Yüksek | Sprint 2 | Planlandı |
+| PB-06 | ATS uyumluluk analizi | CV'nin ATS açısından değerlendirilmesi | Yüksek | Sprint 2 | Tamamlandı |
+| PB-07 | CV - İş İlanı eşleşme skoru | CV ile iş ilanı arasındaki uyumun puanlanması | Yüksek | Sprint 2 | Tamamlandı |
+| PB-08 | Eksik beceri analizi | Eksik teknik ve kişisel becerilerin belirlenmesi | Yüksek | Sprint 2 | Tamamlandı |
+| PB-09 | CV geliştirme önerileri | CV'nin güçlendirilmesi için öneriler sunulması | Yüksek | Sprint 2 | Tamamlandı |
 | PB-10 | Optimize edilmiş CV oluşturma | İş ilanına uygun yeni CV önerisi hazırlanması | Orta | Sprint 3 | Planlandı |
 | PB-11 | Ön yazı (Cover Letter) oluşturma | Başvuruya özel ön yazı hazırlanması | Orta | Sprint 3 | Planlandı |
 | PB-12 | Yapay zekâ destekli mülakat simülasyonu | Kullanıcıya pozisyona özel mülakat soruları yöneltilmesi | Yüksek | Sprint 4 | Planlandı |

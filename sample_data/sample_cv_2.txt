@@ -1,0 +1,18 @@
+Name: Ayşe Yılmaz
+
+Education:
+- BSc Statistics
+
+Technical Skills:
+- Python
+- Excel
+- SQL
+- Power BI
+- Data Visualization
+
+Projects:
+- Sales Dashboard with Power BI
+- Customer Churn Analysis
+
+Languages:
+- English (C1)
