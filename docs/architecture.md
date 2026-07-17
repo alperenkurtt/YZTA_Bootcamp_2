@@ -59,6 +59,41 @@ Sprint 1 sonunda sistemin veri akışı aşağıdaki gibidir.
 
 ---
 
+## Sprint 2 Mimari Akışı
+
+Sprint 2 sonunda sistemin veri akışı aşağıdaki gibidir.
+
+```text
+          sample_cv_2.txt          sample_job_2.txt
+                 │                       │
+                 └──────────┬────────────┘
+                            │
+                            ▼
+                utils/file_reader.py
+                            │
+                            ▼
+                       main.py
+                            │
+                            ▼
+              utils/keyword_matcher.py
+     (Requirements ayrıştırma + eşleşme skoru,
+        eşleşen/eksik beceri listesi üretimi)
+                            │
+                            ▼
+                 utils/ai_analyzer.py
+     (skor ve eksik beceriler prompt'a enjekte edilir)
+                            │
+                            ▼
+                  Google Gemini API
+     (güçlü yönler, ATS değerlendirmesi, CV önerileri)
+                            │
+                            ▼
+      Analiz Sonucu (Terminal): Deterministik Skor
+                + Yapay Zekâ Yorumu
+```
+
+---
+
 ## Gelecek Sprintlerde Planlanan Mimari
 
 Sprint 1 sonunda sistemin temel analiz akışı başarıyla oluşturulmuş ve ilk çalışan prototip geliştirilmiştir.
@@ -74,5 +109,22 @@ Sprint 1 sonunda sistemin temel analiz akışı başarıyla oluşturulmuş ve il
 - Kişiselleştirilmiş Öğrenme Önerileri
 - Başvuru Takip Sistemi
 - Web Tabanlı Kullanıcı Arayüzü
+
+Bu modüller mevcut mimari üzerine kademeli olarak entegre edilerek NorthCompass'un yalnızca CV analizi yapan bir uygulamadan, kullanıcıların iş başvurusu ve kariyer gelişim süreçlerini uçtan uca destekleyen bütünleşik bir yapay zekâ kariyer platformuna dönüştürülmesi hedeflenmektedir.
+
+
+Sprint 2 sonunda ATS uyumluluk analizi, CV – İş İlanı eşleşme/puanlama ve eksik beceri analizi modülleri deterministik eşleştirme katmanı ve güncellenmiş prompt yapısı ile tamamlanmıştır.
+
+İlerleyen sprintlerde mevcut mimarinin aşağıdaki modüllerle genişletilmesi planlanmaktadır:
+
+
+Optimize Edilmiş CV Oluşturma Modülü
+Ön Yazı (Cover Letter) Oluşturma Modülü
+Yapay Zekâ Destekli Mülakat Simülasyonu
+Kariyer Yol Haritası ve Beceri Analizi
+Kişiselleştirilmiş Öğrenme Önerileri
+Başvuru Takip Sistemi
+Web Tabanlı Kullanıcı Arayüzü
+
 
 Bu modüller mevcut mimari üzerine kademeli olarak entegre edilerek NorthCompass'un yalnızca CV analizi yapan bir uygulamadan, kullanıcıların iş başvurusu ve kariyer gelişim süreçlerini uçtan uca destekleyen bütünleşik bir yapay zekâ kariyer platformuna dönüştürülmesi hedeflenmektedir.

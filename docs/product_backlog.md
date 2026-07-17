@@ -37,3 +37,13 @@ Sprint 1 sonunda;
 
 Bu backlog, proje geliştikçe güncellenecek ve yeni ihtiyaçlara göre genişletilecektir.
 
+## Sprint 2 Çıktıları
+
+Sprint 2 sonunda;
+
+- utils/keyword_matcher.py modülü ile iş ilanındaki gereksinimler ayrıştırılıp CV ile karşılaştırılarak deterministik bir eşleşme skoru ve eşleşen/eksik beceri listesi üretilebilmektedir.
+- utils/ai_analyzer.py içindeki prompt, uyum yüzdesini kendisi hesaplamayacak; koddan gelen skor ve eksik beceri verisini temel alarak güçlü yönler, ATS uyumluluğu değerlendirmesi ve CV geliştirme önerileri üretecek şekilde güncellenmiştir.
+- main.py, yeni eşleştirme adımını da kapsayacak şekilde güncellenmiştir.
+- Gemini API anahtarı .env dosyasına eklenmiş, gerekli bağımlılıklar kurulmuş ve sistem gerçek API ile uçtan uca test edilmiştir.
+- Windows konsolunda Türkçe karakter bozulmasına neden olan encoding sorunu giderilmiştir.
+- İkinci bir örnek senaryo (Veri Analisti pozisyonu: sample_cv_2.txt, sample_job_2.txt) ile uçtan uca doğrulama yapılmış, %83 eşleşme skoru ile tutarlı sonuçlar elde edilmiştir.
