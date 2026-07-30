@@ -1,9 +1,0 @@
-__pycache__
-.env
-.gitignore
-config.py
-requirements.txt
-app.py
-llm_client.py
-main.py
-prompts.py
