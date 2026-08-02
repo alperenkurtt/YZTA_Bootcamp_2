@@ -2,8 +2,8 @@
 Yapay Zeka Ve Teknolojileri Akademisi Bootcamp 2
 
 ## Takım Üyeleri
-- ***Ezgigül Karaca*** - Product Owner
-- ***Alperen Kurt*** - Scrum Master
+- ***Alperen Kurt*** - Product Owner
+- ***Ezgigül Karaca*** - Scrum Master
 
 ## Proje İsmi
 Fluentie
